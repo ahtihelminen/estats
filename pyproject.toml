@@ -46,7 +46,7 @@ select = [
 	"TRY",  # tryceratops
 	"UP",   # pyupgrade
 ]
-ignore = []
+ignore = ["COM812"]
 
 [tool.ruff.format]
 quote-style = "double"
