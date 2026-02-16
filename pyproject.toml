@@ -4,7 +4,11 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+]
 
 [dependency-groups]
 dev = [
@@ -16,7 +20,32 @@ target-version = "py311"
 line-length = 88
 
 [tool.ruff.lint]
-select = ["E", "F", "I"]
+select = [
+	"A",    # builtins
+	"ANN",  # type annotations
+	"B",    # bugbear
+	"BLE",  # blind exception
+	"C4",   # comprehensions
+	"COM",  # commas
+	"E",    # pycodestyle
+	"EM",   # errormessage
+	"EXE",  # executable
+	"F",    # pyflakes
+	"FURB", # refurb
+	"I",    # isort
+	"ICN",  # import-conventions
+	"INP",  # implicit-namespace-package
+	"NPY",  # numpy
+	"PERF", # perflint
+	"PIE",  # misc dict stuff
+	"PTH",  # pathlib
+	"RET",  # return
+	"RUF",  # ruff
+	"SIM",  # simplify
+	"T10",  # debugger
+	"TRY",  # tryceratops
+	"UP",   # pyupgrade
+]
 ignore = []
 
 [tool.ruff.format]
